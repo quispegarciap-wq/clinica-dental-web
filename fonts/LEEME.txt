@@ -1,0 +1,3 @@
+Fuentes del diseño original: Amandine y Kayak Sans (comerciales).
+Si compras la licencia, copia aquí: Amandine-Light.woff2, KayakSans-Light.woff2, KayakSans-Bold.woff2.
+La web ya las carga automáticamente; sin ellas usa Jost y Outfit (Google Fonts).

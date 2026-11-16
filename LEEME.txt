@@ -1,0 +1,5 @@
+SUBIR A TU WEB
+1. Sube TODO el contenido de esta carpeta a public_html (cPanel/FTP) o arrástrala a Netlify/Cloudflare Pages/Vercel.
+2. Reemplaza en index.html: TU-DOMINIO.com, +00000000000 / 00000000000 (teléfono y WhatsApp) y https://formspree.io/f/TU_ID (crea un formulario gratis en formspree.io).
+3. Pon tus fotos en /img y cámbialas por los bloques de relleno (class="ph") usando <img src="img/foto.jpg" alt="...">.
+4. Cambia "tu logo" por tu logotipo.
