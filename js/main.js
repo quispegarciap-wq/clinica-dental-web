@@ -7,3 +7,4 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.rv,.story').forEach(e=>io.observe(e));
 document.querySelectorAll('.counter b').forEach(b=>{const t=b.textContent,n=parseInt(t.replace(/\D/g,''));const suf=t.replace(/[\d.]/g,'');
  new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){o.disconnect();let s=performance.now();(function f(now){const p=Math.min((now-s)/1500,1);b.textContent=String(Math.round(n*p)).replace(/\B(?=(\d{3})+$)/g,'.')+suf;if(p<1)requestAnimationFrame(f)})(s)}}).observe(b)});
+document.querySelectorAll('.arrows button').forEach(b=>b.onclick=()=>{const t=document.querySelector(b.dataset.t);t.scrollBy({left:b.dataset.d*(t.firstElementChild.offsetWidth+18)*2,behavior:'smooth'})});
