@@ -239,3 +239,23 @@ nav a:hover:after{width:100%}
 .trio{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 .trio .ph,.split .trio .ph{min-height:0!important;min-width:0}
 html,body{max-width:100%;overflow-x:clip}
+
+/* ---- imágenes ---- */
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .6s}
+.ph:hover>img{transform:scale(1.04)}
+.ph:has(>img)::before{display:none}
+.cap{position:relative;z-index:2;color:#fff;font-family:var(--head);font-size:34px;font-weight:300;line-height:1.1;text-shadow:0 2px 16px #0008}
+.contact .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,#0007);z-index:1}
+.vid::after,.ba::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,#0006);z-index:1}
+.vid b,.play,.ba span{z-index:2}
+.card{background:#3a3834}
+.card::before{content:"";position:absolute;inset:0;background:var(--bg) center/cover;z-index:0}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,#000a);z-index:1}
+.card>*{position:relative;z-index:2}
+.card:nth-child(1){--bg:url(../img/svc1.jpg)}.card:nth-child(2){--bg:url(../img/svc2.jpg)}.card:nth-child(3){--bg:url(../img/svc3.jpg)}
+.hero .photo{background:url(../img/hero.jpg) center/cover}
+.hero .photo::after{display:none}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#fffbf5ee 0,#fffbf5aa 32%,transparent 58%)}
+.hero .wrap{z-index:2}
+.goalcards .ph{background:none}
+@media(max-width:900px){.hero::before{background:linear-gradient(180deg,#fffbf5ee 0,#fffbf5aa 40%,transparent 75%)}.hero .photo{background-position:70% center}}

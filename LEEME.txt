@@ -3,3 +3,7 @@ SUBIR A TU WEB
 2. Reemplaza en index.html: TU-DOMINIO.com, +00000000000 / 00000000000 (teléfono y WhatsApp) y https://formspree.io/f/TU_ID (crea un formulario gratis en formspree.io).
 3. Pon tus fotos en /img y cámbialas por los bloques de relleno (class="ph") usando <img src="img/foto.jpg" alt="...">.
 4. Cambia "tu logo" por tu logotipo.
+
+IMÁGENES
+Las fotos de /img son de stock de Unsplash (licencia Unsplash: uso comercial gratis, sin atribución obligatoria). Son provisionales: cámbialas por fotos de tu clínica con los mismos nombres de archivo y medidas (hero 1920x1080, svc 780x800, goal 1210x642, ba 842x824, vid 560x996, trio 600x800, clinic 2400x664, form 834x1252, ig 640x640).
+Los videos no están: las tarjetas de video muestran una foto con botón de play.
