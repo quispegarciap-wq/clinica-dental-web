@@ -4,7 +4,7 @@
 @font-face{font-family:'Kayak Sans';src:url(../fonts/KayakSans-Light.woff2) format('woff2');font-weight:300;font-display:swap}
 @font-face{font-family:'Kayak Sans';src:url(../fonts/KayakSans-Bold.woff2) format('woff2');font-weight:700;font-display:swap}
 */
-:root{--green:#133A34;--cream:#FFFBF5;--beige:#FAF0E2;--brown:#9D7053;--tan:#D9C3A0;--loop:#4F6B61;
+:root{--green:#1C4F6C;--cream:#FFFBF5;--beige:#FAF0E2;--brown:#9D7053;--tan:#D9C3A0;--loop:#4883A3;--grad:linear-gradient(135deg,#1C4F6C 0%,#306785 55%,#4883A3 100%);
 --head:'Amandine','Jost',sans-serif;--body:'Kayak Sans','Outfit',sans-serif}
 
 *{box-sizing:border-box;margin:0}
@@ -187,8 +187,8 @@ nav a:hover:after{width:100%}
 .ddm b{font-weight:500;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);margin-top:6px}
 .ddm a:hover{color:var(--brown)}
 .paybox{background:var(--green);border-radius:40px;padding:80px 40px;text-align:center;position:relative;overflow:hidden}
-.paybox:before{content:"";position:absolute;left:-90px;bottom:-110px;width:360px;height:360px;border:22px solid #4F6B61;border-radius:50%}
-.paybox:after{content:"";position:absolute;right:-70px;top:-90px;width:260px;height:260px;border:22px solid #4F6B6180;border-radius:50%}
+.paybox:before{content:"";position:absolute;left:-90px;bottom:-110px;width:360px;height:360px;border:22px solid #4883A3;border-radius:50%}
+.paybox:after{content:"";position:absolute;right:-70px;top:-90px;width:260px;height:260px;border:22px solid #4883A380;border-radius:50%}
 .paybox h2{color:var(--beige);font-family:var(--head);font-size:46px;position:relative;z-index:1}
 .paybox p{color:var(--beige);margin:14px 0 26px;position:relative;z-index:1}
 .paybox .btn{position:relative;z-index:1}
@@ -221,7 +221,7 @@ nav a:hover:after{width:100%}
 .gal p{max-width:620px;margin:0 auto 30px}
 .ph.wide{aspect-ratio:1211/334;min-height:0;border-radius:28px}
 .banner{background:var(--green);margin:60px 20px;border-radius:50px;padding:120px 40px;text-align:center;position:relative;overflow:hidden}
-.banner:before{content:"";position:absolute;left:50%;top:-140px;width:520px;height:520px;margin-left:-260px;border:24px solid #4F6B6166;border-radius:50%}
+.banner:before{content:"";position:absolute;left:50%;top:-140px;width:520px;height:520px;margin-left:-260px;border:24px solid #4883A366;border-radius:50%}
 .banner h2{position:relative;color:var(--beige);font-size:44px;max-width:780px;margin:0 auto}
 .loc{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;padding:30px 40px 90px}
 .loc h2{font-size:42px;margin-bottom:14px}
@@ -504,4 +504,18 @@ body.lock{overflow:hidden}
  /* pie de página */
  footer .cols{gap:30px}
  footer li{font-weight:500;font-size:16px;margin-bottom:12px}
+}
+
+/* ==== marca Glab Dental: logo y azul degradado ==== */
+.logo{display:flex;align-items:center;line-height:0}
+.logo img{height:58px;width:auto;transition:height .3s}
+header.small .logo img{height:46px}
+.dlogo{height:52px;width:auto;align-self:flex-start;margin:0 0 18px}
+.flogo{height:70px;width:auto;display:block}
+.goal,.paybox,.form,footer,.change .bar,.banner{background-image:var(--grad)}
+.ba span.d,.tabs span:first-child,.btn.dark{background-image:var(--grad);border-color:transparent}
+@media(max-width:900px){
+ .logo img{height:48px}
+ header.small .logo img{height:38px}
+ .banner{background-image:none}
 }
